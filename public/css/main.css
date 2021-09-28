@@ -99,6 +99,7 @@ body {
 }
 .success-return-btn {
   margin-top: 100px;
+  display: block;
 }
 
 
