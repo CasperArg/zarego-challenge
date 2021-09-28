@@ -11,7 +11,7 @@ body {
 }
 
 .main-wrapper {
-  padding: 50px;
+  padding: 50px 100px;
 }
 
 .img-logo {
@@ -20,13 +20,14 @@ body {
 
 .subtitle {
   width: 250px;
+  padding-left: 70px;
 }
 
 .links-wrapper {
   margin: 40px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .links-wrapper a {
   text-align: center;
@@ -50,6 +51,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
+  padding: 0 70px;
 }
 .row1 {
   display: flex;
@@ -111,9 +113,10 @@ body {
   .subtitle {
     text-align: center;
     margin: 0 auto;
+    padding: 0;
   }
-  .links-wrapper {
-    grid-template-columns: 100%;
+  .form-wrapper {
+    padding: 0;
   }
   .row1 {
     display: grid;
@@ -121,5 +124,13 @@ body {
   }
   .item-lastname {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 968px) {
+  .main-wrapper {
+    padding: 50px;
+  }
+  .form-wrapper {
+    padding: 0;
   }
 }

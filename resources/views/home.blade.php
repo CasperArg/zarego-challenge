@@ -11,17 +11,17 @@
 <body id="home">
   <div class="main-wrapper">
 
-  <div class="img-logo">
-    <img src="http://prospects.cabify.zarego.com/img/logo.png">
-  </div>
+    <div class="img-logo">
+      <img src="http://prospects.cabify.zarego.com/img/logo.png">
+    </div>
 
-  <h2 class="subtitle">Imaginando nuevas formas de hacer tu experiencia aún más agradable</h2>
+    <h2 class="subtitle">Imaginando nuevas formas de hacer tu experiencia aún más agradable</h2>
 
-  <div class="links-wrapper">
-    <a href="/video"><img src="http://prospects.cabify.zarego.com/img/video.png"></a>
-    <a href="/prospects"><img src="http://prospects.cabify.zarego.com/img/conocer.png"></a>
-  </div>
-  <img class="bottom-img" src="http://prospects.cabify.zarego.com/img/footer.png">
+    <div class="links-wrapper">
+      <a href="/video"><img src="http://prospects.cabify.zarego.com/img/video.png"></a>
+      <a href="/prospects"><img src="http://prospects.cabify.zarego.com/img/conocer.png"></a>
+    </div>
+    <img class="bottom-img" src="http://prospects.cabify.zarego.com/img/footer.png">
   </div>
 </body>
 </html>
