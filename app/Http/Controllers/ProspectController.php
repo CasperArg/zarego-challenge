@@ -41,20 +41,20 @@ class ProspectController extends Controller
         
         $newProspect = Prospect::where('email', $request->email)->first();
         
-        
-        
-
-
         $rules = [
-            'name' => 'required|string',
-            'lastname' => 'required|string',
-            'email' => 'required|string',
+            'name' => 'required',
+            'lastname' => 'required',
+            'email' => 'required|email:filter',
         ];
         $input = $request->all();
         $validator = Validator::make($input,$rules);
         if ($validator->fails()) {
-            // return response()->json(['error' => $validator->messages()], 400);
-            return view('prospectsform', ['success' => false]);
+
+            $request->flash();
+
+            $errors = $validator->errors();
+
+            return view('prospectsform', ['errors' => $errors])->withInput($request);
         }
 
         $isnew = $newProspect === null;

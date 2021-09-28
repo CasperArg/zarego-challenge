@@ -137,8 +137,15 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'name' => [
+            'required' => 'Este campo es requerido',
+        ],
+        'lastname' => [
+            'required' => 'Este campo es requerido',
+        ],
+        'email' => [
+            'required' => 'Este campo es requerido',
+            'email' => 'El mail debe ser una direccion valida'
         ],
     ],
 

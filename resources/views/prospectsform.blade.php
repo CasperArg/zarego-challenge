@@ -14,7 +14,6 @@
     <div class="img-logo">
       <img src="http://prospects.cabify.zarego.com/img/logo.png">
     </div>
-    
 
   @if (isset($success))
     @if ($success == true)
@@ -34,7 +33,7 @@
       <a class="success-return-btn" href="/"><button class="confirm-btn">Home</button></a>
     
   @else
-    <form action="/prospects" method="POST">
+    <form action="/prospects" method="POST" novalidate>
 
     {{ csrf_field() }}
     {{method_field('POST')}}
@@ -43,17 +42,21 @@
         <div class="row row1">
           <div class="input-item item-name">
             <label for="name">Nombre</label>
-            <input type="text" name="name" placeholder="Ingrese el nombre">
+            <input type="text" name="name" placeholder="Ingrese el nombre" value="{{old('name')}}">
+            {!! $errors->first('name', '<p class="input-warning">:message</p>') !!} 
+            
           </div>
           <div class="input-item item-lastname">
             <label for="lastname">Apellido</label>
-            <input type="text" name="lastname" placeholder="Ingrese el apellido">
+            <input type="text" name="lastname" placeholder="Ingrese el apellido" value="{{old('lastname')}}">
+            {!! $errors->first('lastname', '<p class="input-warning">:message</p>') !!} 
           </div>
         </div>
         <div class="row row2">
           <div class="input-item item-email">
             <label for="email">Mail</label>
             <input type="email" name="email" placeholder="Ingrese el mail">
+            {!! $errors->first('email', '<p class="input-warning">:message</p>') !!} 
           </div>
         </div>
         <div class="row row3">
