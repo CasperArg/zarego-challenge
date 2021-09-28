@@ -78,6 +78,9 @@ body {
   margin-top: 10px;
   font-weight: 700;
 }
+.input-warning {
+  color: #ccc;
+}
 .confirm-btn {
   height: 34px;
   background: #fff;
