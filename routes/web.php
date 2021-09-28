@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/video', 'VideoController@index');
+
+
+Route::get('/prospects', 'ProspectController@index');
+Route::post('/prospects', 'ProspectController@store');
+
